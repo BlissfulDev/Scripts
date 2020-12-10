@@ -1,0 +1,188 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+local w = library:CreateWindow("Site-76 Fucker") -- Creates the window
+
+local main = w:CreateFolder("Main")
+
+main:Toggle("test",function(bool)
+    shared.toggle = bool
+    print(shared.toggle)
+end)
+
+local b = w:CreateFolder("Teleports")
+
+-- Teleport Function
+
+function tp(x,y,z)
+-- SETTINGS START
+local valtomove = 15
+noclip = true
+anchored = false
+-- SETTINGS END
+
+
+moving = true
+if x < game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X then
+while x < game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X do
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X-valtomove,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z))
+end
+end
+if z < game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z then
+while z < game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z do
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z-valtomove))
+end
+end
+if x > game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X then
+while x > game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X do
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X+valtomove,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z))
+end
+end
+if z > game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z then
+while z > game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z do
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z+valtomove))
+end
+end
+if y < game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y then
+while y < game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y do
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y-valtomove,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z))
+end
+end
+if y > game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y then
+while y > game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y do
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y+valtomove,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z))
+end
+end
+moving = false
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(x,y,z))
+if anchored == true then
+game.Players.LocalPlayer.Character.Head.Anchored = false
+end
+end
+spawn (function()
+game:getService("RunService"):BindToRenderStep("",0,function()
+if not game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid") then return end
+if moving == true then
+if noclip == true then
+game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
+end
+if anchored == true then
+game.Players.LocalPlayer.Character.Head.Anchored = true
+end
+end
+end)
+end)
+
+-- Teleport Function
+
+b:Button("Exit",function()
+    tp(491, 209.403, 1435.098) -- Cafeteria
+end)
+
+b:Button("Cafeteria",function()
+    tp(694.320984,19,365.308807) -- Cafeteria
+end)
+
+b:Button("Elevator Shaft",function()
+    tp(571.28,19,-71) -- Elevator shaft
+end)
+
+b:Button("Heavy Containment",function()
+    tp(563.24,-169,-34) -- Heavy Containment
+end)
+
+b:Button("Living Room Containment",function()
+    tp(936.83,-169,-333) -- Living room containment
+end)
+
+b:Button("Nuke Button",function()
+    tp(563.24,-174.69,5.9) -- Nuke button
+end)
+
+b:Button("Shelter A",function()
+    tp(316,8,143) -- Shelter A
+end)
+
+b:Button("Shelter B",function()
+   tp(340.44,19,591) -- Shelter B
+end)
+
+b:Button("Criminal Shop",function()
+   tp(677,1.5,494) -- Criminal Shop
+end)
+
+b:Button("Matinence Tunnels",function()
+   tp(654.9,1.5,326) -- Matenence Tunnels
+end)
+
+local scp = w:CreateFolder("SCP Teleports")
+
+scp:Button("Mr Fish",function()
+   tp(413.598, 19, -30.349) -- Mr Fish
+end)
+
+scp:Button("Old Man",function()
+   tp( 920.101, -169.5, 161.245) -- Mr Fish
+end)
+
+scp:Button("The Mask",function()
+   tp(730.536, -169.55, -12.901) -- Mr Fish
+end)
+
+scp:Button("Scarlet Lake",function()
+   tp(405.925, -169.55, 161.494) -- Mr Fish
+end)
+scp:Button("Shadow Child",function()
+   tp(285.65, -169.55, -182.551) -- Mr Fish
+end)
+
+scp:Button("Burning Man",function()
+   tp(414.901, -177.55, -480.544) -- Mr Fish
+end)
+
+scp:Button("Plague Doctor",function()
+   tp(484.145, -169.5, -266.357) -- Mr Fish
+end)
+
+scp:Button("Door Man",function()
+   tp(664.206, 19, -193.049) -- Mr Fish
+end)
+
+scp:Button("Momolith",function()
+   tp(515.1, 19, -232.25) -- Mr Fish
+end)
+
+scp:Button("The Sculptre",function()
+   tp(630.4, 19, -312.15) -- Mr Fish
+end)
+
+scp:Button("Explosive Bat",function()
+   tp(413.494, 19, -100.825) -- Mr Fish
+end)
+
+scp:Button("Clockwork Machine",function()
+   tp(717.906, 19, -8.449) -- Mr Fish
+end)
+
+scp:Button("Stick Insect",function()
+   tp(404.2, -12.1, 242.89) -- Mr Fish
+end)
+
+local quest = w:CreateFolder("Quest Items")
+
+quest:Button("Jade Ring", function()
+    tp(298.798, 19, -0.655)
+end)
+
+quest:Button("The Bell", function()
+    tp(686.578, 19, -72.464)
+end)
+
+quest:Button("Panacea", function()
+    tp(856.75, 19, 232.3)
+end)
