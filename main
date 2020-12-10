@@ -73,12 +73,8 @@ end)
 
 -- Teleport Function
 
-b:Button("Exit",function()
+b:Button("Exit Facility",function()
     tp(491, 209.403, 1435.098) -- Exit
-end)
-
-b:Button("Task Guy",function()
-    tp(787.695, 1.5, 267.995) -- Task Guy
 end)
 
 b:Button("Cafeteria",function()
