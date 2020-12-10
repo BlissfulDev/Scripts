@@ -4,13 +4,6 @@ local w = library:CreateWindow("Site-76 Hax") -- Creates the window
 
 local b = w:CreateFolder("Teleports")
 
-b:Label("Pretty Useless NGL",{
-    TextSize = 25; -- Self Explaining
-    TextColor = Color3.fromRGB(55,55,55); -- Self Explaining
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
-    
-}) 
-
 -- Teleport Function
 
 function tp(x,y,z)
