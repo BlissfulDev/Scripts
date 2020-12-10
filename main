@@ -1,8 +1,15 @@
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
-local w = library:CreateWindow("Site-76 Fucker") -- Creates the window
+local w = library:CreateWindow("Site-76 Hax") -- Creates the window
 
 local b = w:CreateFolder("Teleports")
+
+b:Label("Pretty Useless NGL",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
 
 -- Teleport Function
 
