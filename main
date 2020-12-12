@@ -123,10 +123,6 @@ scp:Button("Old Man",function()
    tp( 920.101, -169.5, 161.245)
 end)
 
-scp:Button("The Mask",function()
-   tp(730.536, -169.55, -12.901)
-end)
-
 scp:Button("Shadow Child",function()
    tp(285.65, -169.55, -182.551)
 end)
@@ -143,8 +139,8 @@ scp:Button("Door Man",function()
    tp(664.206, 19, -193.049)
 end)
 
-scp:Button("Momolith",function()
-   tp(515.1, 19, -232.25)
+scp:Button("Vampire",function()
+   tp(314.493, -180.55, -333.85)
 end)
 
 scp:Button("The Sculptre",function()
@@ -161,6 +157,10 @@ end)
 
 scp:Button("Stick Insect",function()
    tp(404.2, -12.1, 242.89)
+end)
+
+scp:Button("The Mask",function()
+   tp(730.536, -169.55, -12.901)
 end)
 
 local quest = w:CreateFolder("Quest Items")
