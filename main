@@ -109,6 +109,10 @@ b:Button("Matinence Tunnels",function()
    tp(654.9,1.5,326) -- Matenence Tunnels
 end)
 
+b:Button("Task Guy",function()
+   tp(787.495, 1.5, 267.795) -- Matenence Tunnels
+end)
+
 local scp = w:CreateFolder("SCP Teleports")
 
 scp:Button("Mr Fish",function()
