@@ -74,47 +74,47 @@ end)
 -- Teleport Function
 
 b:Button("Exit Facility",function()
-    tp(491, 209.403, 1435.098) -- Exit
+    tp(491, 209.403, 1435.098)
 end)
 
 b:Button("Cafeteria",function()
-    tp(694.320984,19,365.308807) -- Cafeteria
+    tp(694.320984,19,365.308807)
 end)
 
 b:Button("Elevator Shaft",function()
-    tp(571.28,19,-71) -- Elevator shaft
+    tp(571.28,19,-71)
 end)
 
 b:Button("Heavy Containment",function()
-    tp(563.24,-169,-34) -- Heavy Containment
+    tp(563.24,-169,-34)
 end)
 
 b:Button("Arm Nuke",function()
-    tp(491, 209.403, 1435.098) -- Exit
+    tp(379.8, 209.403, 1436.499)
 end)
 
 b:Button("Nuke Button",function()
-    tp(563.24,-174.69,5.9) -- Nuke button
+    tp(563.24,-174.69,5.9)
 end)
 
 b:Button("Shelter A",function()
-    tp(316,8,143) -- Shelter A
+    tp(316,8,143)
 end)
 
 b:Button("Shelter B",function()
-   tp(340.44,19,591) -- Shelter B
+   tp(340.44,19,591)
 end)
 
 b:Button("Criminal Shop",function()
-   tp(677,1.5,494) -- Criminal Shop
+   tp(677,1.5,494)
 end)
 
 b:Button("Matinence Tunnels",function()
-   tp(654.9,1.5,326) -- Matenence Tunnels
+   tp(654.9,1.5,326)
 end)
 
 b:Button("Task Guy",function()
-   tp(787.495, 1.5, 267.795) -- Matenence Tunnels
+   tp(787.495, 1.5, 267.795)
 end)
 
 local scp = w:CreateFolder("SCP Teleports")
