@@ -89,6 +89,10 @@ b:Button("Heavy Containment",function()
     tp(563.24,-169,-34) -- Heavy Containment
 end)
 
+b:Button("Arm Nuke",function()
+    tp(491, 209.403, 1435.098) -- Exit
+end)
+
 b:Button("Nuke Button",function()
     tp(563.24,-174.69,5.9) -- Nuke button
 end)
