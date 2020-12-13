@@ -199,6 +199,16 @@ heist:Button("Scarlet Lake",function()
    tp(405.925, -169.55, 161.494)
 end)
 
+local es = w:CreateFolder("Escapse")
+
+es:Button("Escapse 1st", function()
+    tp(153.21, -175.346, -182.185)
+end)
+
+es:Button("Escapse 2nd", function()
+    tp(526.6, -57.5, -38.85)
+end)
+
 local cm = w:CreateFolder("Christmas Event")
 
 cm:Button("Green Present", function()
