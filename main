@@ -73,10 +73,6 @@ end)
 
 -- Teleport Function
 
-b:Button("Exit Facility",function()
-    tp(491, 209.403, 1435.098)
-end)
-
 b:Button("Cafeteria",function()
     tp(694.320984,19,365.308807)
 end)
@@ -202,11 +198,11 @@ end)
 local es = w:CreateFolder("Escapse")
 
 es:Button("Escapse 1st", function()
-    tp(153.21, -175.346, -182.185)
+    tp(200.3, 19, 177.7)
 end)
 
 es:Button("Escapse 2nd", function()
-    tp(526.6, -57.5, -38.85)
+    tp(491, 209.403, 1435.098)
 end)
 
 local cm = w:CreateFolder("Christmas Event")
