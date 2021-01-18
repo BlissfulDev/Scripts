@@ -71,9 +71,6 @@ end
 end)
 end)
 
--- Teleport Function
-local scp = w:CreateFolder("SCP Teleports")
-
 scp:Button("Roadster",function()
    tp(66.4687, 1.42496, 8.24138)
 end)
